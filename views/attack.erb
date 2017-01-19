@@ -1,0 +1,5 @@
+<%= @game.players[@game.no_turn].name %> has attacked <%= @game.players[@game.turn].name %>.
+
+<form action="/play" method="get">
+  <input type="submit" value="ok">
+</form>

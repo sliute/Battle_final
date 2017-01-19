@@ -1,0 +1,19 @@
+<div>
+  <%= @game.players[0].name %> vs. <%= @game.players[1].name %>
+</div>
+
+<div>
+<%= @game.players[@game.turn].name %> has <%= @game.players[@game.turn].hit_points %> hit points.
+</div>
+
+<div>
+<%= @game.players[@game.no_turn].name %> has <%= @game.players[@game.no_turn].hit_points %> hit points.
+</div>
+
+<div>
+  It's <%= @game.players[@game.turn].name %>'s turn!
+</div>
+
+<form action="/attack" method="post">
+  <input type="submit" value="attack">
+</form>
