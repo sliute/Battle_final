@@ -1,7 +1,5 @@
 require "spec_helper"
 
-# RSpec.feature "Widget management", :type => :feature do
-
 feature 'Enter names' do
   scenario 'submitting names' do
     sign_in_and_play
